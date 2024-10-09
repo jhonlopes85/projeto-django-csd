@@ -1,21 +1,9 @@
 from django.http import HttpResponse
-
-# from django.shortcuts import render
+from django.shortcuts import render
 
 
 def home(request):
-    return HttpResponse('''<DOCTYPE>
-    <html>
-    <head><title>Olá Django</title></head>
-    
-    <body>
-        <h1>Olá Django dnv</h1>
-    </body>
-                        
-                        
-                        
-</html>                        
-''')
+    return render(request, 'Home.html')
 
 
 def contato(request):
