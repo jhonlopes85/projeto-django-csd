@@ -4,7 +4,18 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return HttpResponse('Home2')
+    return HttpResponse('''<DOCTYPE>
+    <html>
+    <head><title>Olá Django</title></head>
+    
+    <body>
+        <h1>Olá Django dnv</h1>
+    </body>
+                        
+                        
+                        
+</html>                        
+''')
 
 
 def contato(request):
